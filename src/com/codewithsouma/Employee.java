@@ -9,6 +9,10 @@ public class Employee {
         setHourlyRate(hourlyRate);
     }
 
+    public Employee(int baseSalary) {
+        this(baseSalary,0);
+    }
+
     private void setBaseSalary(int baseSalary) {
         if (baseSalary <= 0)
             throw new IllegalArgumentException("Salary cannot be 0 or less.");
@@ -16,8 +20,8 @@ public class Employee {
     }
 
     private void setHourlyRate(int hourlyRate) {
-        if (hourlyRate <= 0)
-            throw new IllegalArgumentException("Hourly rate cannot be 0 or negative.");
+        if (hourlyRate < 0)
+            throw new IllegalArgumentException("Hourly rate cannot be negative.");
         this.hourlyRate = hourlyRate;
     }
 
