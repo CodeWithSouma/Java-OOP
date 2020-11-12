@@ -32,4 +32,8 @@ public class Employee {
     public int calculateWage(int extraHours) {
         return baseSalary + (extraHours * hourlyRate);
     }
+
+    public int calculateWage() {
+        return calculateWage(0);
+    }
 }
