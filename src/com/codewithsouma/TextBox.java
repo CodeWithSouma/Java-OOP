@@ -1,6 +1,6 @@
 package com.codewithsouma;
 
-public class TextBox {
+public class TextBox extends UIControl{
     public String text = "";
 
     public void setText(String text){
