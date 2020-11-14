@@ -1,15 +1,13 @@
 package com.codewithsouma;
 
-public class UIControl {
+public abstract class UIControl {
     private boolean isEnabled = true;
 
 //    public UIControl(boolean isEnabled) {
 //        this.isEnabled = isEnabled;
 //    }
 
-    public void render(){
-
-    }
+    abstract public void render();
 
     public void enable(){
         isEnabled = true;
