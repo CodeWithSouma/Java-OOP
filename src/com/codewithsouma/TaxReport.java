@@ -1,9 +1,10 @@
 package com.codewithsouma;
 
 public class TaxReport {
-    private TaxCalculator2018 calculator;
+    private TaxCalculator calculator;
 
-    public TaxReport(TaxCalculator2018 calculator) {
+    //Constructor Injection
+    public TaxReport(TaxCalculator calculator) {
         this.calculator = calculator;
     }
 
